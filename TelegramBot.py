@@ -6,7 +6,14 @@ from telegram.ext import CommandHandler
 
 # https://telegram.me/TestRenderChecker_bot
 
-token = '610148854:AAECjZpN_HZrwIUQwb0lQt_4SAyuzMVZfDE'
+
+def get_token():
+    with open('token', 'r') as myfile:
+        data = myfile.read().replace('\n', '')
+        return data
+
+
+token = get_token()
 
 bot = telegram.Bot(token=token)
 
