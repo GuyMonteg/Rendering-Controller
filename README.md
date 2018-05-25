@@ -1,2 +1,2 @@
 # Rendering-Controller
-Telegram bot + Server + Client for checking render information on multiple machines
+Telegram bot + Client for checking render information on machines
